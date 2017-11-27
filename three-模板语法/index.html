@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用Vue</title>
+</head>
+<body>
+    <div id="app">
+        <span>{{mubanyufa}}</span>
+        <br />
+        <span>《Message》:{{ msg }}</span>
+        <br />
+        <span v-once>《这个将不会改变》: {{ msg }}</span>
+
+
+        <p>Using mustaches:{{ rawHtml }}</p>
+        <p>Using v-html directive:<span style="color: red" v-html="rawHtml"></span></p>
+        <p>Using v-html directive:<span style="color: blue"> {{rawHtml}}</span></p>
+
+
+        <!--<div v-bind:id="dynamicId"></div>-->
+        <!--<button v-bind:disabled="isButtonDisabled">Button</button>-->
+
+        <!--{{ number + 1}}-->
+        <!--{{ ok ? 'YES' : 'NO'}}-->
+        <!--{{ message.split('').reverse().join('')}}-->
+        <!--<div v-bind:id="'list-' + id"></div>-->
+
+    </div>
+
+    <!--必须后引入js文件 不然找不到id 会报错-->
+    <script src="https://unpkg.com/vue"></script>
+    <script src="js/js.js"></script>
+</body>
+</html>
